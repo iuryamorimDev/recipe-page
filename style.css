@@ -2,6 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgba(224, 160, 221, 0.466);
@@ -13,21 +14,35 @@ li {
   margin: 0px;
   list-style: none;
 }
+dd,
+dt {
+  list-style: none;
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+}
 img {
   display: block;
   max-width: 100%;
   border-radius: 16px;
 }
-section {
+.cabeca {
   max-width: 600px;
   margin-top: 80px;
+  background-color: white;
+  padding: 30px 30px 0 30px;
+  border-radius: 16px 16px 0 0;
+}
+.container {
+  max-width: 600px;
+  /* margin-top: 80px; */
   background-color: white;
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  border-radius: 16px;
+  border-radius: 0px 0px 16px 16px;
 }
 .font {
   font-size: 2em;
@@ -55,7 +70,7 @@ section {
   position: relative;
   display: flex;
   align-items: center;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 500;
   margin-top: 6px;
   color: rgba(48, 44, 44, 0.753);
@@ -70,9 +85,68 @@ section {
   position: relative;
   left: -20px;
 }
+
 .lista-1 span {
   font-weight: 700 !important;
   color: black;
   font-size: 1em !important;
   padding-right: 4px;
+}
+.list-2 {
+  margin-bottom: 30px;
+}
+.list-2 li {
+  padding-left: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-top: 6px;
+  color: rgba(48, 44, 44, 0.753);
+}
+.list-2 li::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.63);
+  position: relative;
+  left: -20px;
+}
+.list-2 h2 {
+  color: rgba(138, 41, 41, 0.767);
+  font-family: "Young Serif", sans-serif;
+}
+.title {
+  color: rgba(138, 41, 41, 0.767);
+  font-family: "Young Serif", sans-serif;
+}
+.font-black-title {
+  font-weight: 700;
+  color: black;
+  font-size: 1em;
+}
+.red-bold {
+  color: rgba(138, 41, 41, 0.767);
+  font-weight: bold;
+}
+.conteudo-2 ul {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    margin-top: 0px;
+    border-radius: 0px;
+  }
+  img {
+    border-radius: 0px;
+  }
+  .cabeca {
+    padding: 0px;
+    margin-top: 0px;
+  }
 }
