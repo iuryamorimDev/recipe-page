@@ -150,7 +150,7 @@ img {
 .last-list li {
   display: grid;
   align-items: center;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid rgba(173, 154, 154, 0.342);
   padding-bottom: 14px;
   margin-bottom: 14px;
