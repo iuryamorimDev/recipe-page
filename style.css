@@ -8,8 +8,7 @@ body {
   background-color: rgba(224, 160, 221, 0.466);
   font-family: "Outfit", sans-serif;
 }
-ul,
-li {
+ul {
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -43,6 +42,7 @@ img {
   align-items: center;
   justify-items: center;
   border-radius: 0px 0px 16px 16px;
+  margin-bottom: 80px;
 }
 .font {
   font-size: 2em;
@@ -93,7 +93,8 @@ img {
   padding-right: 4px;
 }
 .list-2 {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(173, 154, 154, 0.342);
 }
 .list-2 li {
   padding-left: 30px;
@@ -125,7 +126,7 @@ img {
 }
 .font-black-title {
   font-weight: 700;
-  color: black;
+  color: rgba(0, 0, 0, 0.781);
   font-size: 1em;
 }
 .red-bold {
@@ -136,11 +137,37 @@ img {
   display: flex;
   gap: 20px;
 }
+.conteudo-2 ul:last-child {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(173, 154, 154, 0.342);
+}
+.conteudo-2 li {
+  color: rgba(0, 0, 0, 0.74);
+}
+.cor-geral {
+  color: rgba(0, 0, 0, 0.74);
+}
+.last-list li {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+  border-bottom: 1px solid rgba(173, 154, 154, 0.342);
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+}
+.last-list li:first-child {
+  padding-top: 10px;
+}
+.last-list li:last-child {
+  border-bottom: none;
+}
+
 @media (max-width: 600px) {
   .container {
     max-width: 100%;
     margin-top: 0px;
     border-radius: 0px;
+    margin-bottom: 0px;
   }
   img {
     border-radius: 0px;
